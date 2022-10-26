@@ -16,3 +16,17 @@ services:
     value: single-node
   - key: cluster.name
     value: elastic
+- type: web
+  name: Techpays Kibana
+  env: docker
+  plan: starter
+  region: frankfurt
+  dockerfilePath: ./Dockerfile-kibana
+  autoDeploy: true
+  disk:
+    name: kibana-data
+    mountPath: /usr/share/kibana/data
+    sizeGB: 1
+  envVars:
+  - key: ES_JAVA_OPTS
+    value: "-Xms256m -Xmx256m"
