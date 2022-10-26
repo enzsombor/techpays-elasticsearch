@@ -3,6 +3,7 @@ services:
   name: Techpays Elasticsearch
   env: docker
   plan: starter plus
+  region: frankfurt
   disk:
     name: esdata
     mountPath: /usr/share/elasticsearch/data
