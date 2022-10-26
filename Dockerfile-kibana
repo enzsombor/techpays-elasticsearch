@@ -1,5 +1,5 @@
 # The official Kibana Docker image
-FROM pull docker.elastic.co/kibana/kibana:8.4.3-amd64
+FROM docker.elastic.co/kibana/kibana:8.4.3-amd64
 
 # Copy our config file over
 COPY --chown=1000:0 config/kibana.yml /usr/share/kibana/config/kibana.yml
