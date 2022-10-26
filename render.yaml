@@ -22,7 +22,7 @@ services:
   plan: starter
   region: frankfurt
   dockerfilePath: ./Dockerfile-kibana
-  autoDeploy: true
+  autoDeploy: false
   disk:
     name: kibana-data
     mountPath: /usr/share/kibana/data
