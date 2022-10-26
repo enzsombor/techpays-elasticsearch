@@ -1,8 +1,8 @@
 services:
 - type: pserv
-  name: elasticsearch
+  name: Techpays Elasticsearch
   env: docker
-  plan: standard
+  plan: starter plus
   disk:
     name: esdata
     mountPath: /usr/share/elasticsearch/data
