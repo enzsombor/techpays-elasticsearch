@@ -1,3 +1,4 @@
 server.host: "0.0.0.0"
 server.shutdownTimeout: "5s"
+
 server.publicBaseUrl: "https://techpays-kibana.onrender.com:443"
